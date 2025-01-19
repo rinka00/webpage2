@@ -6,7 +6,7 @@ const imageContainer = document.querySelector('.image-container');
 const layers = document.querySelectorAll('.image-container > div');
 
 // 初期設定
-gsap.set('#layer01, #layer02, #layer03,#layer04', { opacity: 0 });
+gsap.set('#layer01, #layer02, #layer03', { opacity: 0 });
 gsap.set('#layer01', { opacity: 1 });
 
 // ScrollTriggerの設定
@@ -22,22 +22,20 @@ ScrollTrigger.create({
         // 進行状況に応じて左のSVGを操作
         if (progress < 0.1) {
             gsap.to('#layer01', { opacity: 1 });
-            gsap.to('#layer02, #layer03,#layer04', { opacity: 0 });
-        } else if (progress >= 0.1 && progress < 0.2) {
-            gsap.to('#layer01, #layer02', { opacity: 1 });
-            gsap.to('#layer03,#layer04', { opacity: 0 });
-        } else if (progress >= 0.2 && progress < 0.3) {
-            gsap.to('#layer01, #layer02, #layer03', { opacity: 1 });
-            gsap.to('#layer04', { opacity: 0 });
-        } else if (progress >= 0.3 && progress < 0.4) {
-            gsap.to('#layer01, #layer02, #layer03,#layer04', { opacity: 1 });
+            gsap.to('#layer02, #layer03', { opacity: 0 });
+        } else if (progress >= 0.1 && progress < 0.4) {
+            gsap.to('#layer02', { opacity: 1 });
+            gsap.to('#layer03,#layer01', { opacity: 0 });
+        } else if (progress >= 0.4 && progress < 0.5) {
+            gsap.to('#layer03', { opacity: 1 });
+            gsap.to('#layer01,#layer02', { opacity: 0 });
         } else {
-            gsap.to('#layer01, #layer02, #layer03,#layer04', { opacity: 1 });
+            gsap.to('#layer03', { opacity: 1 });
         }
     },
     onComplete: () => {
         // アニメーションが終了した後にイラストを表示し続ける
-        gsap.to('#layer01, #layer02, #layer03', { opacity: 1 });
+        gsap.to('#layer03', { opacity: 1 });
     }
 });
 
@@ -77,8 +75,8 @@ gsap.fromTo('.p2',
     {
       y: 0,
       opacity: 1,
-      duration: 0.4,
-      delay: 1,
+      duration: 0.6,
+      delay: 0.8,
       scrollTrigger: { 
         trigger: ".p3", 
         start: "bottom bottom",
