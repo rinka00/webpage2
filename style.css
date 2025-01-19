@@ -176,7 +176,7 @@ body, html {
     background-image: linear-gradient(transparent calc(100% - 1px),rgb(184, 221, 254)  10%, rgb(184, 221, 254) ), linear-gradient(90deg, transparent calc(100% - 1px),  rgba(184, 221, 254)10%, rgba(184, 221, 254));
     background-size: 3em 3em ;
     background-repeat: repeat;
-    background-color: #F2F2F2;;
+    background-color: #6fcae6;;
    
     margin: 0;
     padding: 0;
