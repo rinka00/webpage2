@@ -61,7 +61,7 @@ gsap.fromTo('.p2',
       y: 0,
       opacity: 1,
       duration: 0.6,
-      delay: 0.6,
+      delay: 0.4,
       scrollTrigger: { 
         trigger: ".split-right__title", 
       
@@ -77,7 +77,7 @@ gsap.fromTo('.p2',
     {
       y: 0,
       opacity: 1,
-      duration: 0.6,
+      duration: 0.4,
       delay: 1,
       scrollTrigger: { 
         trigger: ".p3", 
