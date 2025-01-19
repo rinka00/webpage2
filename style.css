@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+.zen-kaku-gothic-new-regular {
+    font-family: "Zen Kaku Gothic New", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .zen-kaku-gothic-new-medium {
+    font-family: "Zen Kaku Gothic New", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  
+.split-box{
+    padding: 1em auto;
+    position: relative;
+	width:50%;
+    overflow-y: scroll;
+	
+   
+}
+
+.left-box {
+    background-color: #FAF8F2;
+    position:absolute;
+    overflow-y: scroll;
+	
+    
+    
+   
+}
+
+.right-box {
+    position:absolute;
+	width:50%;
+	right:0;
+    height:100em;
+    z-index: 1; /* 左側を前面に配置 */
+   
+   
+    
+}
+
+.title-box {
+    width: 80%;
+    height: 10%;
+    background-color: #EEEBF2;
+    border-radius: 20px;
+    margin: 5% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title-box h1 {
+    font-size: 300%;
+    font-weight: bold;
+    color: #1290af;
+    margin: 0;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+
+.box-content{
+    margin:auto;
+   
+}
+
+.split-left__title{
+    font-family: "Zen Kaku Gothic New", serif;
+    color:#E3B2B4;
+    font-weight:  700;
+    font-style: normal;
+    font-size: 250%;
+    
+
+}
+
+.split-right__title{
+    font-family: "Zen Kaku Gothic New", serif;
+    color: #737373;
+    text-align: center;
+    padding-bottom: 10%;
+    font-weight:  700;
+    font-style: normal;
+    font-size: 330%;
+    letter-spacing: 0.4em;
+}
+
+.p{
+    font-family: "zen-kaku-gothic-new-medium";
+    color: #737373;
+    position: relative;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    font-weight:  600;
+    font-style: normal;
+    font-size: 200%;
+    letter-spacing: 0.1em;
+   
+}
+
+.p::before {
+    content: ''; /* 擬似要素を使って線を作成 */
+    position: absolute;
+    bottom: 46%; /* 高さの1/3の位置 */
+    left: 0;
+    margin-left:7%;
+    width: 85%;
+    height: 10%; /* 蛍光ペンの線の太さ */
+    background-color: #00ffff7a; /* 蛍光青色 */
+    border-radius: 2px; /* 角を丸めてより自然な蛍光ペンの線に */
+}
+
+.p2{
+    font-family: "zen-kaku-gothic-new-medium";
+    color:#737373;
+    line-height: 2;
+    padding-left: 14%;
+    padding-top: 5%;
+    font-weight:  600;
+    font-style: normal;
+    font-size: 120%;
+    letter-spacing: 0.2em;
+    
+}
+
+.p4{
+    font-family: "zen-kaku-gothic-new-medium";
+    color: #737373;
+    line-height: 2;
+    padding-left: 14%;
+    padding-top: 5%;
+    font-weight:  600;
+    font-style: normal;
+    font-size: 120%;
+    letter-spacing: 0.2em;
+    
+}
+.p3{
+    font-family: "zen-kaku-gothic-new-medium";
+    color:#737373;
+    text-align: center;
+    line-height: 2;
+    padding-top: 10%;
+    padding-bottom: 8%;
+    font-weight:  600;
+    font-style: normal;
+    font-size: 200%;
+    letter-spacing: 0.2em;
+    
+}
+
+.p5{
+    font-family: "zen-kaku-gothic-new-medium";
+    color: #737373;
+    position: relative;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-weight:  600;
+    font-style: normal;
+    font-size: 200%;
+    letter-spacing: 0.1em;
+   
+}
+
+body, html {
+    max-width:auto;
+    max-height: auto;
+    margin: 0 auto;
+    background-image: linear-gradient(transparent calc(100% - 1px),rgb(184, 221, 254)  10%, rgb(184, 221, 254) ), linear-gradient(90deg, transparent calc(100% - 1px),  rgba(184, 221, 254)10%, rgba(184, 221, 254));
+    background-size: 3em 3em ;
+    background-repeat: repeat;
+    background-color: #F2F2F2;;
+   
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.image-container {
+    height: 100vh; 
+    width: 70%; 
+    margin: auto;
+    margin-top: 15%;
+   
+}
+
+
+
+
+/* メディアクエリ: 画面幅が1024px以下のとき */
+@media screen and (max-width: 1024px) {
+    .split-container {
+        flex-direction: column; /* カラムを縦に並べる */
+    }
+
+    .split-box {
+        width: 100%; /* 幅を100%にする */
+        height: auto; /* 高さを自動調整 */
+    }
+
+    .left-box, .right-box {
+        position: relative; /* 固定位置を解除 */
+        width: 100%; /* 両カラムを画面幅に合わせる */
+        height: auto; /* 高さを自動調整 */
+    }
+
+    .split-right__title {
+        font-size: 200%; /* フォントサイズを小さくする */
+        padding-left: 5%; /* 左側のパディングを減らす */
+        padding-bottom: 3%; /* ボトムのパディングを減らす */
+    }
+
+
+    .image-container {
+        height: 50vh; /* 画像表示エリアの高さを50%に */
+    }
+
+    
+}
