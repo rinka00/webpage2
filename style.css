@@ -152,6 +152,16 @@
     letter-spacing: 0.2em;
     
 }
+.p7{
+    font-family: "zen-kaku-gothic-new-medium";
+    color:#737373;
+    text-align: center;
+    font-weight:  600;
+    font-style: normal;
+    font-size: 200%;
+    letter-spacing: 0.2em;
+    
+}
 body, html {
     max-width:auto;
     max-height: auto;
@@ -170,7 +180,7 @@ body, html {
     height: 100vh; 
     width: 70%; 
     margin: auto;
-    margin-top: 15%;
+    margin-top: 5%;
    
 }
 .button-container {
