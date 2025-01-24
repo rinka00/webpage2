@@ -13,35 +13,7 @@
   }
   
   
-.split-box{
-    padding: 1em auto;
-    position: relative;
-	width:50%;
-    overflow-y: scroll;
-	
-   
-}
 
-.left-box {
-    background-color: #FAF8F2;
-    position:absolute;
-    overflow-y: scroll;
-	
-    
-    
-   
-}
-
-.right-box {
-    position:absolute;
-	width:50%;
-	right:0;
-    height:100em;
-    z-index: 1; /* 左側を前面に配置 */
-   
-   
-    
-}
 
 .title-box {
     width: 80%;
@@ -97,7 +69,7 @@
     text-align: center;
     padding-top: 5%;
     padding-bottom: 10%;
-    font-weight:  600;
+    font-weight:  800;
     font-style: normal;
     font-size: 200%;
     letter-spacing: 0.1em;
@@ -119,8 +91,8 @@
 .p2{
     font-family: "zen-kaku-gothic-new-medium";
     color:#737373;
+    text-align: center;
     line-height: 2;
-    padding-left: 14%;
     font-weight:  600;
     font-style: normal;
     font-size: 120%;
@@ -131,8 +103,8 @@
 .p4{
     font-family: "zen-kaku-gothic-new-medium";
     color: #737373;
+    text-align: center;
     line-height: 2;
-    padding-left: 14%;
     font-weight:  600;
     font-style: normal;
     font-size: 120%;
@@ -201,10 +173,11 @@ body, html {
     margin-top: 15%;
    
 }
-button-container {
-    position: absolute;
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
     bottom: 20%; 
-    right: 50%; 
   }
 
   .button-container a {
